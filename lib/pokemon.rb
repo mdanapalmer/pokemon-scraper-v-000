@@ -9,8 +9,6 @@ class Pokemon
   end
 
   def self.save(name:, id:)
-    name = @name
-    id = @id 
   end
 
 end
