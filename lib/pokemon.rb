@@ -18,6 +18,7 @@ class Pokemon
 
   def self.find(id, db)
     pika = db.execute("SELECT * FROM pokemon WHERE id = ?", id).flatten
+    pika = Pokemon.new
     #binding.pry
   end
 
