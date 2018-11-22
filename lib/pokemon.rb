@@ -13,11 +13,11 @@ class Pokemon
   end
 
   def self.save(name, type, db)
-    db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type).flatten
+    db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type)
   end
 
   def self.find(id, db)
-    pika = db.execute("SELECT * FROM pokemon WHERE id = ?", id)
+    pika = db.execute("SELECT * FROM pokemon WHERE id = ?", id).flatten
     binding.pry
   end
 
