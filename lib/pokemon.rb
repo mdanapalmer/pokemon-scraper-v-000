@@ -16,6 +16,7 @@ class Pokemon
   end
 
   def self.find(index, db)
-    
+
+  end
 
 end
